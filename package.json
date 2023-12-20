@@ -1,0 +1,12 @@
+{
+  "name": "dom-learning-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ameliapham/DOM-learning-project.git",
+  "author": "ameliapham <ptt.huong.8895@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev" : "vite",
+    "build" : "vite build"
+  }
+}
