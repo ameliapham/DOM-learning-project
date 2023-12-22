@@ -9,4 +9,4 @@ for (i = 0; i < listItems.length; i++) {
 const ul = document.querySelector('ul')
 const li = document.createElement('li')
 
-ul.apprend(li)
+ul.append(li)
