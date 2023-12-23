@@ -27,4 +27,9 @@ const changeColor = () => {
     newButtonColor.style.backgroundColor = '#da8b4e',
     newButtonColor.style.color = 'white'
 }
+const revertColor = () => {
+    newButtonColor.style.backgroundColor = ''
+    newButtonColor.style.color = ''
+}
 newButtonColor.addEventListener("mouseover", changeColor)
+newButtonColor.addEventListener('mouseout', revertColor)
