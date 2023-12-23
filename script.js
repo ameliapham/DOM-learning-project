@@ -18,6 +18,13 @@ for (i = 0; i < listItems.length; i++) {
 li.remove()
 
 // Event Listeners --------------------
-//const eventBtn2 = document.querySelector("#btn2")
-//const alertBtn = () => alert('Hello')
-document.querySelector("#btn2").addEventListener("click", () => alert('Hello Minimazing World'))
+const eventBtn2 = document.querySelector("#btn2")
+// const alertBtn = () => alert('Hello')
+eventBtn2.addEventListener("click", () => alert('Hello Minimazing World'))
+
+const newButtonColor = document.querySelector("#btn3")
+const changeColor = () => {
+    newButtonColor.style.backgroundColor = '#da8b4e',
+    newButtonColor.style.color = 'white'
+}
+newButtonColor.addEventListener("mouseover", changeColor)
