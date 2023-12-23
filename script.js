@@ -19,5 +19,5 @@ li.remove()
 
 // Event Listeners --------------------
 const eventBtn2 = document.querySelector("#btn2")
-const alertBtn = () => alert('Hello')
-eventBtn2.addEventListener("click", alertBtn)
+//const alertBtn = () => alert('Hello')
+eventBtn2.addEventListener("click", () => alert('Hello'))
