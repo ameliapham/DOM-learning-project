@@ -23,16 +23,15 @@ const eventBtn2 = document.querySelector("#btn2")
 eventBtn2.addEventListener("click", () => alert('Hello Minimazing World'))
 
 const newButtonColor = document.querySelectorAll(".button")
-const changeColor = () => {
-    newButtonColor.style.backgroundColor = '#da8b4e',
-    newButtonColor.style.color = 'white'
+const changeColor = (event) => {
+    event.target.style.backgroundColor = '#da8b4e',
+    event.target.style.color = 'white'
 }
-const revertColor = () => {
-    newButtonColor.style.backgroundColor = ''
-    newButtonColor.style.color = ''
+const revertColor = (event) => {
+    event.target.style.backgroundColor = ''
+    event.target.style.color = ''
 }
-for (i=0; i<newButtonColor.length; i++ ){
-    newButtonColor.addEventListener("mouseover", changeColor)
-    newButtonColor.addEventListener('mouseout', revertColor)
-}
-
+newButtonColor.forEach(button => {
+    button.addEventListener("mouseover", changeColor)
+    button.addEventListener('mouseout', revertColor)
+})
