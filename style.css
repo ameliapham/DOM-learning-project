@@ -56,3 +56,12 @@ li {
     color:#c35500;
     font-size: 12px;
 }
+
+.hidden-content {
+    font-size: 12px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #c35500;
+}
