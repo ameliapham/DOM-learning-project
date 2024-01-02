@@ -8,7 +8,7 @@ ul.append(li)
 
 li.innerText = 'Sherlock Homes ss5'
 // li.setAttribute('class', 'list-items')
-li.classList.add('list-items')
+li.classList.add('list-items') // Add element `li` to list `list-items`
 
 const listItems = document.querySelectorAll('.list-items')
 for (i = 0; i < listItems.length; i++) {
@@ -34,4 +34,10 @@ const revertColor = (event) => {
 newButtonColor.forEach(button => {
     button.addEventListener("mouseover", changeColor)
     button.addEventListener('mouseout', revertColor)
+})
+
+const moreInfoButton = document.querySelector("#btn1")
+const hiddenContent = document.querySelector(".hidden-content")
+moreInfoButton.addEventListener('click', () => {
+    hiddenContent.classList.toggle('show')
 })
