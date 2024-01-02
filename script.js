@@ -40,4 +40,9 @@ const moreInfoButton = document.querySelector("#btn1")
 const hiddenContent = document.querySelector(".hidden-content")
 moreInfoButton.addEventListener('click', () => {
     hiddenContent.classList.toggle('show')
+    if (hiddenContent.classList.contains('show')){
+        moreInfoButton.innerText= 'Less information'
+    } else {
+        moreInfoButton.innerText= 'More information'
+    }
 })
