@@ -36,7 +36,7 @@ newButtonColor.forEach(button => {
     button.addEventListener('mouseout', revertColor)
 })
 
-const moreInfoButton = document.querySelector("#btn1")
+/*const moreInfoButton = document.querySelector("#btn1")
 const hiddenContent = document.querySelector(".hidden-content")
 moreInfoButton.addEventListener('click', () => {
     hiddenContent.classList.toggle('show')
@@ -45,11 +45,18 @@ moreInfoButton.addEventListener('click', () => {
     } else {
         moreInfoButton.innerText= 'More information'
     }
-})
+})*/
 
 // Event Delagation --------------------
-document.querySelector('ul').addEventListener('click', function(e){
+document.querySelector('ul').addEventListener('click', (e) => {
     if(e.target && e.target.nodeName == "BUTTON"){
-        console.log('Clicqué!', e.target)
+        console.log(e.target.id + ' Clicked!', e.target);
+        let hiddenContent = e.target.nextElementSibling
+        hiddenContent.classList.toggle('show')
+        if (hiddenContent.classList.contains('show')){
+            e.target.innerText= 'Less information'
+        } else {
+            e.target.innerText= 'More information'
+        }
     }
 })
