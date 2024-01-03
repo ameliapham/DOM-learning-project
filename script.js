@@ -46,3 +46,10 @@ moreInfoButton.addEventListener('click', () => {
         moreInfoButton.innerText= 'More information'
     }
 })
+
+// Event Delagation --------------------
+document.querySelector('ul').addEventListener('click', function(e){
+    if(e.target && e.target.nodeName == "BUTTON"){
+        console.log('Clicqué!', e.target)
+    }
+})
