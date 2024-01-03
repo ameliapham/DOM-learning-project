@@ -49,7 +49,7 @@ moreInfoButton.addEventListener('click', () => {
 
 // Event Delagation --------------------
 document.querySelector('ul').addEventListener('click', (e) => {
-    if(e.target && e.target.nodeName == "BUTTON"){
+    if(e.target && e.target.matches('button')){
         console.log(e.target.id + ' Clicked!', e.target);
         let hiddenContent = e.target.nextElementSibling
         hiddenContent.classList.toggle('show')
